@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>GeoHex Gem</title>
+	<meta http-equiv="Content-Language" content="English" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Haruyuki Seki (http://twitter.com/hal_sk_e)" />
+	<meta name="description" content="GeoHex for Ruby" />
+	<meta name="keywords" content="geohex, ruby, gem" />	
+	<meta name="Robots" content="index,follow" />
+	<meta name="Generator" content="sNews 1.5" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss/" />
+</head>
+<body>
+	
+<div class="content">
+	<div id="top">
+				<div id="icons">
+					<a href="/index.html" title="Home page"><img src="images/home.gif" alt="Home" /></a>
+					<a href="/projects/geohex/" title="Contact us"><img src="images/contact.gif" alt="Contact" /></a>
+				</div>
+				<h1>GeoHex Gem</h1>
+				<h2>http://geohex.rubyforge.org/</h2>
+	</div>
+	<!-- end of the Top part -->
+</div>			
+
+<div id="prec">
+	<div id="wrap">
+			<div id="pic">
+				<div id="slogan">
+					<h1>GeoHex Ruby gem</h1>
+					<h2>
+                    This GeoHex Ruby gem can convert latitude/longitude to GeoHex code each others. The GeoHex is a latitude/longitude encoding system invented by <a href="http://www.geogames.net/">sa2da</a>.
+                  GeoHex divides geometry regions into hexagonal grid and set an unique identifier to each grid. (It supports only Japan region so far.)
+					</h2>
+				</div>
+			</div>
+			<div id="menu">
+						<ul>	
+							<li><a href="/" title="home">HOME</a></li>
+							<li><a href="#install" title="Install">INSTALL</a></li>
+							<li><a href="#usage" title="QUICK START">QUICK START</a></li>
+							<li><a href="/geohex/" title="API Reference">API REFERENCE</a></li>
+							<li><a href="http://github.com/geohex/geohex-gem" title="Git">GIT REPOS</a></li>
+						
+						</ul>
+			</div>
+	</div>
+</div>
+
+<div class="content">
+	<div id="main">
+		<div id="right_side">
+			<h3>Relative External Links</h3>
+			<ul>	
+							<li><a href="http://github.com/geohex/" title="GeoHex Tools">GEOHEX TOOLS</a></li>
+							<li><a href="http://geogames.net/hex/" title="GeoHex Demo">GEOHEX DEMO</a></li>
+							<li><a href="http://geogames.net/wiki/index.php?GeoHex" title="Project Home">GEOHEX WIKI(Japanese)</a></li>
+							<li><a href="http://geogames.net/wiki/index.php" title="Abous us">ABOUTS US</a></li>
+
+			</ul>
+			
+			<h3>About Author</h3>
+            <ul>
+              <li><a href="http://twitter.com/sa2da">sa2da</a>(GeoHex author)</li>
+              <li><a href="http://twitter.com/hal_sk_e">hal_sk_e</a>(GeoHex Gem author)</li>
+            </ul>
+            
+            <h3>Activities</h3>
+			<ul>	
+              <li>20/Nov: GeoHex Gem 1.0.0 is released</li>
+			</ul>
+		</div>
+		
+		<div id="left_side">
+          <h3><span>GEOHEX DESCRIPTION</span></h3>
+          <p>
+          <img src="images/geohex_demo.png" alt="img" />
+          <ul>
+            The GeoHex is a latitude/longitude encoding system invented by sa2da.
+          <li>GeoHex divides geometry regions into hexagonal grid and set an unique identifier to each grid. It supports only Japan region so far.</li>
+          <li>The coding idea is opened under the Creative Commons Attribution 2.1 Japan Lisence.</li>
+          <li>GeoHex Documents: <a href="http://github.com/geohex/geohex-docs">http://github.com/geohex/geohex-docs</a></li>
+          <li>GeoHex Original Wiki(Japanese): <a href="http://geogames.net/labs/geohex">http://geogames.net/labs/geohex</a></li>
+          <li>GeoHex Demo: <a href="http://geogames.net/hex/">http://geogames.net/hex/</a></li>
+          <li>Other GeoHex Libraries: <a href="http://github.com/geohex/">http://github.com/geohex/</a></li>
+          </ul>
+          </p>
+        <div class="date" style="margin-top:23px;"> 20 Nov 2009</div>
+        <h3><a name="install"></a><span>INSTALL</span></h3>
+        
+        <p>
+        <blockquote>
+        <pre>sudo gem install geohex</pre>
+        </blockquote>
+        If you can not install by remote , download from <a href="http://rubyforge.org/projects/geohex/">rubyforge</a>.
+        </p>
+        
+        <div class="date"></div>
+
+        <h3><a name="usage"></a><span>QUICK START</span></h3>
+        <p>
+        <blockquote>
+        <pre>require 'geohex'
+GeoHex.encode(35.647401,139.716911,1)
+=> '132KpuG'
+GeoHex.decode('0dMV')
+=> [24.338279000000004,124.1577708779443,7]
+</pre>
+        </blockquote>
+        </p>
+        
+        <div class="date"></div>
+
+        </div>
+        
+	</div>
+	<div id="footer">
+	<div class="right">&copy; Copyright 2009, Haruyuki Seki <br />Design: <a href="http://www.free-css-templates.com">David Herreman</a></div>
+	<a href="http://validator.w3.org/check?uri=referer" title="Validate">XHTML</a> - <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate">CSS</a>
+	</div>
+</div>
+
+</body>
+</html>
